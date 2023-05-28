@@ -5,18 +5,18 @@ import ExperienceCard from './components/ExperienceCard'
 export default function Home() {
 	const experience = [
 		{
-			companyTitle: `???`,
+			companyTitle: `(Could Be You!)`,
 			dateRange: `June 2023 - ???`,
-			description: `I'm currently looking for my next thing! I think I'd like to join a team with more focus on javascript-driven applications whether on the web or native. I'd also be happy to join a team that uses tools such as Laravel or CraftCMS.`,
+			description: `I'm currently looking for my next journey! I'd like to join a team with more focus on javascript-driven applications whether on the web or native. I'd also be happy to join a team that uses tools such as Laravel or CraftCMS. Even if your team doesn't match those criteria if you think i'd be a good fit for the work you're doing please reach out!`,
 			positionTitle: `???`,
-			tags: [`ReactJS`, `NextJS`, `Typescript`, `React Native`, `Flutter`,'Laravel', `CraftCMS`, `TailwindCSS`]
+			tags: []
 		},
 		{
-			companyTitle: `Union (Joins Valtech)`,
+			companyTitle: `Union`,
 			dateRange: `Sep 2020 - May 2023`,
-			description: `At Union I gained extensive experience by performing a variety of tasks and throughout my journey moved between Frontend and Backend focuses. More recently I was primarily Frontend focused while also building out a few CMSs on the Backend with CraftCMS. I also gained some experience with native apps using React Native. Other tools and experience learned include but is not limited to AWS, CI/CD, Linux Administration.`,
+			description: `At Union I gained extensive experience by performing a variety of tasks and throughout my journey moved between Frontend and Backend focuses. More recently I was Frontend focused while also building out a few CMSs on the Backend with CraftCMS. I also gained some experience with native apps using React Native. Other tools and experience learned includes but is not limited to AWS, CI/CD, Linux Administration. I've mentored to more junior developers on projects that i've lead or also been a part of building, providing feedback in two stages to try and grow their skillsets on multiple fronts.`,
 			positionTitle: `Full-stack Developer`,
-			tags: [`ReactJS`, `NextJS`, `React Native`, `Typescript`, `CraftCMS`, `TailwindCSS`, `Bash`, `AWS`, `CI/CD`]
+			tags: [`ReactJS`, `NextJS`, `React Native`, `Typescript`, `CraftCMS`, `TailwindCSS`, `Bash`, `Linux`, `AWS`, `CI/CD`]
 		},
 		{
 			companyTitle: `Interactive Knowledge`,
@@ -57,7 +57,7 @@ export default function Home() {
 					</h2>
 
 					<h3 className='tracking-wider'>
-						I&apos;m an engineer with a background in design which has given me a strong eye for detail and the ability to truly bring designs to life.
+						I&apos;m an engineer with a background in design which has given me a strong eye for detail and the ability to bring designs to life.
 					</h3>
 				</hgroup>
 			</header>
@@ -67,7 +67,7 @@ export default function Home() {
 			{/* Experience */}
 			<section className='[&>*+*]:mt-14 [&>*:nth-child(2)]:mt-2'>
 					<h2 className='uppercase tracking-widest text-sm opacity-80'>
-							Work History &amp; Experience
+						Experience
 					</h2>
 
 					{/* Union <span className='text-xs'><em>(Joins Valtech)</em></span> */}

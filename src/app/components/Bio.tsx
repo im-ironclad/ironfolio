@@ -11,11 +11,11 @@ export default function Bio() {
         </p>
 
         <p>
-          I went to school at <a href="https://www.charlestonsouthern.edu/academics/college-of-humanities-and-social-sciences/graphic-design/" rel="noreferrer" target="_blank">Charleston Southern University</a>, earning a bachelor&apos;s degree in graphic design. I also picked up an interest and knack for photography throughout the graphic design curriculum, which I plan to add a few pieces to this portfolio soon. Although I enjoyed design and photography, once I had my first <em>Intro to Web Development</em> class, the rest became history. I didn&apos;t officially earn it but I also attempted a minor in computer science, but missed it by a few credits <strong>(still counts to me!)</strong>.
+          I went to school at <a href="https://www.charlestonsouthern.edu/academics/college-of-humanities-and-social-sciences/graphic-design/" rel="noreferrer" target="_blank">Charleston Southern University</a>, earning a bachelor&apos;s degree in graphic design. I also picked up an interest and knack for photography throughout the graphic design curriculum, which I plan to add a few pieces to this portfolio soon. Although I enjoyed design and photography, once I had my first <em>Intro to Web Development</em> class, the rest became history.
         </p>
 
         <p>
-          I started my professional career by focusing on core web development fundamentals, learning how to write semantic markup with css (scss) and vanilla javascript. This has allowed me to remain dynamic and pick up other languages and frameworks quickly.
+          I started my professional career by focusing on core web development fundamentals, learning how to write semantic markup with css (scss) and vanilla javascript. This has allowed me to remain adaptable to learning other languages and frameworks quickly.
         </p>
       </div>
     </section>
