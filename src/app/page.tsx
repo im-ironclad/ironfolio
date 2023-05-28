@@ -1,113 +1,101 @@
-import Image from 'next/image'
+import HeadshotWithLinks from '@/app/components/HeadshotWithLinks'
+import Bio from '@/app/components/Bio'
+import ExperienceCard from './components/ExperienceCard'
 
 export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+	const experience = [
+		{
+			companyTitle: `???`,
+			dateRange: `June 2023 - ???`,
+			description: `I'm currently looking for my next thing! I think I'd like to join a team with more focus on javascript-driven applications whether on the web or native. I'd also be happy to join a team that uses tools such as Laravel or CraftCMS.`,
+			positionTitle: `???`,
+			tags: [`ReactJS`, `NextJS`, `Typescript`, `React Native`, `Flutter`,'Laravel', `CraftCMS`, `TailwindCSS`]
+		},
+		{
+			companyTitle: `Union (Joins Valtech)`,
+			dateRange: `Sep 2020 - May 2023`,
+			description: `At Union I gained extensive experience by performing a variety of tasks and throughout my journey moved between Frontend and Backend focuses. More recently I was primarily Frontend focused while also building out a few CMSs on the Backend with CraftCMS. I also gained some experience with native apps using React Native. Other tools and experience learned include but is not limited to AWS, CI/CD, Linux Administration.`,
+			positionTitle: `Full-stack Developer`,
+			tags: [`ReactJS`, `NextJS`, `React Native`, `Typescript`, `CraftCMS`, `TailwindCSS`, `Bash`, `AWS`, `CI/CD`]
+		},
+		{
+			companyTitle: `Interactive Knowledge`,
+			dateRange: `Dec 2018 - May 2020`,
+			description: `At Interactive Knowledge I broadened my experience and learned a few new skills and technologies such as creating interactive physical experiences (kiosks) with electron and react. I also helped develop websites, some decoupled, using Drupal and NextJS.`,
+			positionTitle: `Full-stack Developer`,
+			tags: [`ReactJS`, `NextJS`, `Electron`, `Drupal`]
+		},
+		{
+			companyTitle: `Wray Ward`,
+			dateRange: `May 2017 - October 2018`,
+			description: `At Wray Ward my primary responsibility was the development of marketing emails. I gained experience and worked with multiple email marketing and CRM platforms such as Emma, Pardot, HubSpot, MailChimp, Constant Contact and Campaign Monitor. I also lead one project and assisted on others that utilized the CodeIgniter framework. Lastly I assisted on larger project builds that implemented CraftCMS.`,
+			positionTitle: `Jr. Developer`,
+			tags: [`HTML`, `CSS`, `SCSS`, `CraftCMS`, `CodeIgniter`, `Email Marketing`]
+		},
+		{
+			companyTitle: `Chief Supply`,
+			dateRange: `Aug 2016 - March 2017`,
+			description: `At Chief Supply I was responsible for the development of marketing emails. I gained experience working in various email marketing platforms such as Listrak and Bronto.`,
+			positionTitle: `Jr. Developer`,
+			tags: [`HTML`, `CSS`, `SCSS`, `Email Marketing`]
+		}
+	]
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+	return (
+		<main className="min-h-screen flex flex-col items-start pt-10 px-8 [&>*+*]:mt-36 | lg:px-20 lg:pt-20">
+			<header className='flex flex-col gap-10 | lg:flex-row lg:items-center'>
+				<HeadshotWithLinks />
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+				{/* Heading group/copy */}
+				<hgroup className='order-2 [&>*+*]:mt-5 | lg:order-1 | lg:max-w-[50%]'>
+					<h1 className='text-3xl'>
+						Adam, <strong>Ironclad</strong>, Wells
+					</h1>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+					<h2 className='uppercase text-sm tracking-widest !mt-2 opacity-80'>
+						Creative Developer &amp; Software Engineer
+					</h2>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+					<h3 className='tracking-wider'>
+						I&apos;m an engineer with a background in design which has given me a strong eye for detail and the ability to truly bring designs to life.
+					</h3>
+				</hgroup>
+			</header>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+			<Bio />
+
+			{/* Experience */}
+			<section className='[&>*+*]:mt-14 [&>*:nth-child(2)]:mt-2'>
+					<h2 className='uppercase tracking-widest text-sm opacity-80'>
+							Work History &amp; Experience
+					</h2>
+
+					{/* Union <span className='text-xs'><em>(Joins Valtech)</em></span> */}
+
+					{ experience.map((job, i) => (
+						<ExperienceCard
+							key={job.companyTitle + i}
+							companyTitle={job.companyTitle}
+							dateRange={job.dateRange}
+							description={job.description}
+							positionTitle={job.positionTitle}
+							tags={job.tags}
+						></ExperienceCard>
+					))}
+			</section>
+
+			{/* Projects */}
+			{/* <section className='[&>*+*]:mt-2'>
+					<h2 className='uppercase tracking-widest text-sm opacity-80'>
+							Projects
+					</h2>
+
+					<div className='[&>*+*]:mt-4 tracking-wider'>
+						<p>
+							TBD
+						</p>
+					</div>
+			</section> */}
+		</main>
+	)
 }
