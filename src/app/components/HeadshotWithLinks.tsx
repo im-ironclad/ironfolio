@@ -76,7 +76,7 @@ export default function HeadshotWithLinks({ containerClasses = '' }) {
           <path d="M.55,6.41H4.84V20H.55Zm2-1.7h0A2.37,2.37,0,0,1,0,2.36,2.4,2.4,0,0,1,2.62,0,2.39,2.39,0,0,1,5.21,2.36,2.39,2.39,0,0,1,2.59,4.71ZM22,20H17.14V13c0-1.84-.76-3.1-2.44-3.1a2.46,2.46,0,0,0-2.32,1.67,3.19,3.19,0,0,0-.1,1.11V20H7.46s.06-12.45,0-13.59h4.82V8.55c.28-.94,1.82-2.27,4.28-2.27,3.05,0,5.44,2,5.44,6.17V20Z" fill="#00bdff" fillRule="evenodd"/>
         </svg>
       ),
-      url: 'https://twitter.com/imironclad'
+      url: 'https://www.linkedin.com/in/adamironcladwells/'
     },
   ]
 
@@ -92,7 +92,7 @@ export default function HeadshotWithLinks({ containerClasses = '' }) {
         width={200}
         height={200}
         alt='Headshot of Adam Wells'
-        className='block object-cover rounded-full relative z-[1]'
+        className='block object-cover rounded-full relative z-[1] bg-[#040816]'
       />
 
       <ul className={`${dynamicClasses.linkList} absolute right-0 top-1/2 -translate-y-1/2 z-[0] | transition-all duration-500 linear`}>
