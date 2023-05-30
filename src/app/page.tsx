@@ -30,7 +30,7 @@ export default function Home() {
 			dateRange: `May 2017 - October 2018`,
 			description: `At Wray Ward my primary responsibility was the development of marketing emails. I gained experience and worked with multiple email marketing and CRM platforms such as Emma, Pardot, HubSpot, MailChimp, Constant Contact and Campaign Monitor. I also lead one project and assisted on others that utilized the CodeIgniter framework. Lastly I assisted on larger project builds that implemented CraftCMS.`,
 			positionTitle: `Jr. Developer`,
-			tags: [`HTML`, `CSS`, `SCSS`, `CraftCMS`, `CodeIgniter`, `Email Marketing`]
+			tags: [`HTML`, `CSS`, `SCSS`, `CraftCMS`, `CodeIgniter`, 'Gulp', `Email Marketing`]
 		},
 		{
 			companyTitle: `Chief Supply`,

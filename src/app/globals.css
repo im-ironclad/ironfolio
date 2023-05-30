@@ -41,7 +41,7 @@ body {
 :root {
   --scrollbar-gradient: linear-gradient(
     to bottom,
-    white 75%,
+    white 50%,
     green
   );
 }
