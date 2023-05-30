@@ -28,7 +28,7 @@ export default function ScrollWatcher() {
       document.documentElement.style.setProperty('--scrollbar-gradient', `
         linear-gradient(
           to bottom,
-          white 75%,
+          white 50%,
           rgba(${255 * percentage}, ${150 - 150 * percentage}, 0)
         )
       `);
