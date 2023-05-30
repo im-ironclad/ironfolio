@@ -37,11 +37,11 @@ export default function ExperienceCard({
       </p>
 
       { tags.length > 0 &&
-        <ul className='flex flex-wrap gap-x-2 mt-4'>
+        <ul className='flex flex-wrap gap-x-2 gap-y-1 mt-4'>
           {tags.map((tool, i) => (
             <li
               key={tool + i}
-              className="rounded-full py-2 px-4 bg-[#0a012b] text-xs font-bold tracking-wider border-[1px] border-[rgba(255,255,255,0.5)]"
+              className="rounded-full py-2 px-4 bg-[#1ebff910] text-[#00bdff] text-xs font-bold tracking-wider"
             >
               {tool}
             </li>

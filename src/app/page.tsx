@@ -42,12 +42,10 @@ export default function Home() {
 	]
 
 	return (
-		<main className="min-h-screen flex flex-col items-start pt-10 px-8 [&>*+*]:mt-36 | lg:px-20 lg:pt-20">
-			<header className='flex flex-col gap-10 | lg:flex-row lg:items-center'>
-				<HeadshotWithLinks />
-
+		<main className="min-h-screen flex flex-col items-start gap-x-20 pt-10 px-8 [&>*+*]:mt-36 | lg:flex-row lg:px-20 lg:pt-20">
+			<header className='flex flex-col gap-10 shrink-0 | lg:w-[45%] lg:sticky lg:top-20 lg:left-0 lg:items-center'>
 				{/* Heading group/copy */}
-				<hgroup className='order-2 [&>*+*]:mt-5 | lg:order-1 | lg:max-w-[50%]'>
+				<hgroup className='[&>*+*]:mt-5 order-2 | lg:order-1'>
 					<h1 className='text-3xl'>
 						Adam, <strong>Ironclad</strong>, Wells
 					</h1>
@@ -60,42 +58,46 @@ export default function Home() {
 						I&apos;m an engineer with a background in design which has given me a strong eye for detail and the ability to bring designs to life.
 					</h3>
 				</hgroup>
+
+				<HeadshotWithLinks containerClasses='order-1 | lg:order-2' />
 			</header>
 
-			<Bio />
-
-			{/* Experience */}
-			<section className='[&>*+*]:mt-14 [&>*:nth-child(2)]:mt-2'>
-					<h2 className='uppercase tracking-widest text-sm opacity-80'>
-						Experience
-					</h2>
-
-					{/* Union <span className='text-xs'><em>(Joins Valtech)</em></span> */}
-
-					{ experience.map((job, i) => (
-						<ExperienceCard
-							key={job.companyTitle + i}
-							companyTitle={job.companyTitle}
-							dateRange={job.dateRange}
-							description={job.description}
-							positionTitle={job.positionTitle}
-							tags={job.tags}
-						></ExperienceCard>
-					))}
-			</section>
-
-			{/* Projects */}
-			{/* <section className='[&>*+*]:mt-2'>
-					<h2 className='uppercase tracking-widest text-sm opacity-80'>
-							Projects
-					</h2>
-
-					<div className='[&>*+*]:mt-4 tracking-wider'>
-						<p>
-							TBD
-						</p>
-					</div>
-			</section> */}
+			<div className='flex flex-col [&>*+*]:mt-36 | lg:!mt-0'>
+			  <Bio />
+  
+  			{/* Experience */}
+  			<section className='[&>*+*]:mt-14 [&>*:nth-child(2)]:mt-2'>
+  					<h2 className='uppercase tracking-widest text-sm opacity-80'>
+  						Experience
+  					</h2>
+  
+  					{/* Union <span className='text-xs'><em>(Joins Valtech)</em></span> */}
+  
+  					{ experience.map((job, i) => (
+  						<ExperienceCard
+  							key={job.companyTitle + i}
+  							companyTitle={job.companyTitle}
+  							dateRange={job.dateRange}
+  							description={job.description}
+  							positionTitle={job.positionTitle}
+  							tags={job.tags}
+  						></ExperienceCard>
+  					))}
+  			</section>
+  
+  			{/* Projects */}
+  			{/* <section className='[&>*+*]:mt-2'>
+  					<h2 className='uppercase tracking-widest text-sm opacity-80'>
+  							Projects
+  					</h2>
+  
+  					<div className='[&>*+*]:mt-4 tracking-wider'>
+  						<p>
+  							TBD
+  						</p>
+  					</div>
+  			</section> */}
+			</div>
 		</main>
 	)
 }

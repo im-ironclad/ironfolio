@@ -34,7 +34,7 @@ export default function ScrollWatcher() {
       `);
     }
 
-    window.addEventListener('scroll', throttle(onScroll, 50))
+    window.addEventListener('scroll', throttle(onScroll, 100))
 
     return () => {
         window.removeEventListener('scroll', onScroll)

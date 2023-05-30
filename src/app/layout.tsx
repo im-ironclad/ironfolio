@@ -1,8 +1,8 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 import ScrollWatcher from './components/ScrollWatcher'
 
-const inter = Inter({ subsets: ['latin'] })
+const poppins = Poppins({ weight: ['400'], subsets: ['latin']})
 
 export const metadata = {
   title: 'Adam, Ironclad, Wells',
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en" className='text-sm | md:text-base'>
       <ScrollWatcher />
-      <body className={`bg-[#040816] text-[#cadae0] leading-[1.75] pb-40 ${inter.className}`}>
+      <body className={`bg-[#040816] text-[#cadae0] leading-[1.75] pb-40 ${poppins.className}`}>
         {children}
       </body>
     </html>

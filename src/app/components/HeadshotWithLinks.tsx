@@ -1,11 +1,11 @@
 import Image from 'next/image'
 
-export default function HeadshotWithLinks() {
+export default function HeadshotWithLinks({ containerClasses = '' }) {
   return (
-    <div className='order-1 relative min-w-[150px] mr-auto | lg:order-2'>
-      {/* <button
+    <div className={`relative min-w-[150px] mr-auto ${containerClasses}`}>
+      <button
         className='absolute top-1/2 -right-7 -translate-y-1/2 bg-green-700 rounded-full flex items-center justify-center h-14 w-14 text-2xl font-bold text-white shadow-md shadow-[#161a28]'
-      >+</button> */}
+      >+</button>
 
       <Image
         src={`/union-headshot.jpeg`}
