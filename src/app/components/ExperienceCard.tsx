@@ -41,7 +41,7 @@ export default function ExperienceCard({
           {tags.map((tool, i) => (
             <li
               key={tool + i}
-              className="rounded-full py-2 px-4 bg-[#1ebff910] text-[#00bdff] text-xs font-bold tracking-wider"
+              className="rounded-full py-2 px-4 text-[#00bdff] text-xs font-bold tracking-wider border-t-2 border-[#00bdff] cursor-default"
             >
               {tool}
             </li>
