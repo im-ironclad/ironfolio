@@ -70,9 +70,7 @@ export default function Home() {
   					<h2 className='uppercase tracking-widest text-sm opacity-80'>
   						Experience
   					</h2>
-  
-  					{/* Union <span className='text-xs'><em>(Joins Valtech)</em></span> */}
-  
+
   					{ experience.map((job, i) => (
   						<ExperienceCard
   							key={job.companyTitle + i}
