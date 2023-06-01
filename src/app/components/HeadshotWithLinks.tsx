@@ -106,6 +106,7 @@ export default function HeadshotWithLinks({ containerClasses = '' }) {
               target="_blank"
               rel='noreferrer'
               title={external.platform}
+              tabIndex={active ? 0 : -1}
               className='flex items-center justify-center w-10 h-10 rounded-full bg-[#1ebff910]'
             >
               {external.icon}
