@@ -86,17 +86,17 @@ export default function Home() {
   			</section>
   
   			{/* Projects */}
-  			{/* <section className='[&>*+*]:mt-2'>
+  			<section className='[&>*+*]:mt-2'>
   					<h2 className='uppercase tracking-widest text-sm opacity-80'>
   							Projects
   					</h2>
   
   					<div className='[&>*+*]:mt-4 tracking-wider'>
   						<p>
-  							TBD
+  							Coming Soon!
   						</p>
   					</div>
-  			</section> */}
+  			</section>
 			</div>
 		</main>
 	)
