@@ -84,7 +84,7 @@ export default function HeadshotWithLinks({ containerClasses = '' }) {
     <div className={`relative min-w-[150px] mr-auto ${containerClasses}`}>
       <button
         onClick={() => setActive(!active)}
-        className={`${dynamicClasses.button} z-[2] absolute top-1/2 -right-7 rounded-full flex items-center justify-center h-14 w-14 text-2xl font-bold text-white shadow-[#161a28] transition-all duration-200`}
+        className={`${dynamicClasses.button} z-[2] absolute top-1/2 -right-7 rounded-full flex items-center justify-center h-14 w-14 text-2xl font-bold text-white shadow-[#161a28] transition-[transform] duration-200 focus:outline-none focus:border-2 focus:border-white`}
       >{active ? '-' : '+'}</button>
 
       <Image

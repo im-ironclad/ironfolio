@@ -26,18 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
-/**
- * Animated BG Gradient by Manuel Pinto
- * @see https://codepen.io/P1N2O/pen/pyBNzX
- */
-body {
-	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-	background: linear-gradient(-45deg, #161c36, #0d0f17, #070a1a, #28409f);
-	/* background: linear-gradient(-45deg, #161c36, #161a28, #121d4b, #081134); */
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-}
-
 :root {
   --scrollbar-gradient: linear-gradient(
     to bottom,
@@ -62,23 +50,23 @@ body {
   background: var(--scrollbar-gradient);
 }
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
 /* Global anchor styles */
 a {
-  @apply text-white font-medium underline transition-colors duration-300;
+  @apply relative text-green-600 font-bold transition-colors duration-300;
 }
 a:hover,
 a:focus {
-  @apply text-green-600;
+  @apply outline-none;
+}
+a:before {
+  @apply content-[''] w-full h-[1px] absolute top-full left-0 bg-green-600 scale-x-0 transition-all duration-300 origin-left;
+}
+a:after {
+  @apply content-[''] w-full h-[1px] absolute top-full right-0 bg-green-600 scale-x-0 transition-all duration-300 origin-right;
+}
+a:hover:before,
+a:focus:before,
+a:hover:after,
+a:focus:after {
+  @apply scale-x-100;
 }

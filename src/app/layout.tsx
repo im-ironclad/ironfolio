@@ -2,7 +2,7 @@ import './globals.css'
 import { Poppins } from 'next/font/google'
 import ScrollWatcher from './components/ScrollWatcher'
 
-const poppins = Poppins({ weight: ['400'], subsets: ['latin']})
+const poppins = Poppins({ weight: ['400', '700'], subsets: ['latin']})
 
 export const metadata = {
   title: 'Adam, Ironclad, Wells',
