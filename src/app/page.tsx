@@ -12,7 +12,7 @@ export default function Home() {
 			tags: []
 		},
 		{
-			companyTitle: `Union`,
+			companyTitle: `Union (Joins Valtech)`,
 			dateRange: `Sep 2020 - May 2023`,
 			description: `At Union I gained extensive experience by performing a variety of tasks and throughout my journey moved between Frontend and Backend focuses. More recently I was Frontend focused while also building out a few CMSs on the Backend with CraftCMS. I also gained some experience with native apps using React Native. Other tools and experience learned includes but is not limited to AWS, CI/CD, Linux Administration. I've mentored to more junior developers on projects that i've lead or also been a part of building, providing feedback in two stages to try and grow their skillsets on multiple fronts.`,
 			positionTitle: `Full-stack Developer`,
