@@ -4,13 +4,13 @@ import ExperienceCard from './components/ExperienceCard'
 
 export default function Home() {
 	const experience = [
-		{
-			companyTitle: `(Could Be You!)`,
-			dateRange: `June 2023 - ???`,
-			description: `I'm currently looking for my next journey! I'd like to join a product team, or a team with more focus on javascript-driven applications whether on the web or native. I'd also be happy to join a team that uses tools such as Laravel or CraftCMS. Even if your team doesn't match those criteria if you think i'd be a good fit for the work you're doing please reach out!`,
-			positionTitle: `???`,
-			tags: []
-		},
+		// {
+		// 	companyTitle: `(Could Be You!)`,
+		// 	dateRange: `June 2023 - ???`,
+		// 	description: `I'm currently looking for my next journey! I'd like to join a product team, or a team with more focus on javascript-driven applications whether on the web or native. I'd also be happy to join a team that uses tools such as Laravel or CraftCMS. Even if your team doesn't match those criteria if you think i'd be a good fit for the work you're doing please reach out!`,
+		// 	positionTitle: `???`,
+		// 	tags: []
+		// },
 		{
 			companyTitle: `Union (Joins Valtech)`,
 			dateRange: `Sep 2020 - May 2023`,
